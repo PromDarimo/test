@@ -1,0 +1,77 @@
+
+<ion-header>
+  <ion-img src="assets/img/logo.png"></ion-img>
+  <!-- <ion-icon name="planet-outline"></ion-icon> -->
+  <p>Search</p><ion-icon name="search-outline"></ion-icon>
+</ion-header>
+<ion-content>
+  <ion-span>
+    <ul>
+      <li><a href="">Icon</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Astronomy</a></li>
+      <li><a href="">Spaceflight</a></li>
+      <li><a href="">The Moon</a></li>
+      <li><a href="">Our Solar System</a></li>
+      <li><a href="">Skywatching</a></li>
+      <div class="more">
+        <li><ion-button id="btn_more"> <!-- code 199-->
+          more
+        </ion-button></li>
+        <!-- <div class="sub-more" id="myDrop" *ngIf="isShowMore">
+          <a href="">About Us</a>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+        </div> -->
+      </div>
+    </ul>
+    <ion-popover trigger="btn_more" triggerAction="click" dismissOnSelect="true">
+      <!-- code 199-->
+      <ng-template>
+        <ion-list>
+          <ion-item [button]="true">About Us</ion-item>
+          <ion-item [button]="true">About Us</ion-item>
+          <ion-item [button]="true">About Us</ion-item>
+        </ion-list>
+      </ng-template>
+    </ion-popover>
+
+  </ion-span>
+  <div class="body-container">
+    <div class="body1">
+      <div class="sub-body1"><ion-img src="assets/img/apollo.jpg"></ion-img></div>
+      <h5>Apollo 11</h5>
+      <p>Apollo 11 (July 16/24, 1969) was the American spaceflight that first landed humans on the Moon. Commander Neil Armstrong and lunar module pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC, and Armstrong became the first person to step onto the Moon's surface six hours and 39 minutes later, on July 21 at 02:56 UTC. </p>
+    </div>
+    <div class="body2">
+      <div class="sub-body2"><ion-img src="assets/img/galaxy1.jpg"></ion-img> </div>
+      <h5>Galaxy</h5>
+      <p>he two interacting galaxies making up the pair known as Arp-Madore 608-333 seem to float side by side in this image from the NASA/ESA Hubble Space Telescope. Though they appear serene and unperturbed, the two are subtly warping one another through a mutual gravitational interaction that is disrupting and distorting both galaxies. Hubble’s Advanced Camera for Surveys captured this drawn-out galactic interaction.</p>
+    </div>
+    <div class="body3">
+      <div class="sub-body3"><ion-img src="assets/img/City.jpg"></ion-img> </div>
+      <h5>City Night</h5>
+      <p>This nighttime photograph from the International Space Station (ISS) as it orbited 261 miles above looks across the Mediterranean Sea from north Africa to southern Europe.</p>
+    </div>
+    <div class="body4">
+      <div class="sub-body4"><ion-img src="assets/img/president.jpg"></ion-img> </div>
+      <h5>President Kennedy</h5>
+      <p>On Sept. 12, 1962, President Kennedy speaks before a crowd of 35,000 people at Rice University in Houston.</p>
+    </div>
+    <div class="body5">
+      <div class="sub-body5"><ion-img src="assets/img/launchpad.jpg"></ion-img> </div>
+      <h5>Launch Pad</h5>
+      <p>NASA's Space Launch System (SLS) rocket with the Orion spacecraft aboard is seen atop the mobile launcher as it is rolled up the ramp at Launch Pad 39B, Wednesday, Aug. 17, 2022, at NASA’s Kennedy Space Center in Florida.</p>
+    </div>
+    <div class="body6">
+      <div class="sub-body6"><ion-img src="assets/img/nebula.jpg"></ion-img> </div>
+      <h5>Nebula</h5>
+      <p>Zeta Ophiuchi is a star with a complicated past, having likely been ejected from its birthplace by a powerful stellar explosion. A new look by NASA's Chandra X-ray Observatory helps tell more of the story of this runaway star.</p>
+    </div>
+  </div>
+
+  <div class="head-menu">
+    <p>Today</p><ion-icon name="planet-outline"></ion-icon>
+  </div>
+  <div class="hr"></div>
+</ion-content>
